@@ -1,6 +1,21 @@
 var test =  require('tape');
 var logic = require('./logic.js');
-console.log('logic', logic);
+
+
+test ('formatLineName test', function(t){
+  var actual = typeof logic.formatLineName("Victoria Line");
+  var expected = 'string';
+  t.equal(actual,expected,'logic.formatLineName should return a string');
+
+  var actual = logic.formatLineName("Victoria Line");
+  var expected = 'victoria';
+  t.equal(actual,expected,'logic.formatLineName("Victoria Line") should return victoria');
+
+  t.end();
+
+});
+
+
 test ('Return strings', function(t){
   var actual = typeof logic.makeTflUrl("Victoria Line");
   var expected = 'string';

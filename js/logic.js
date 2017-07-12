@@ -3,7 +3,7 @@ var logicObj = {
   resultsObj: {},
 
   formatLineName: function(line){
-    return line.slice(0, -5);
+    return line.slice(0,1).toLowerCase() + line.slice(1,-5);
   },
 
   makeTflUrl: function(line) {
@@ -56,5 +56,5 @@ var logicObj = {
 }
 
 if (typeof module !== 'undefined'){
-  module.exports=romanizer;
+  module.exports=logicObj;
 }
