@@ -36,34 +36,4 @@ var logicObj = {
         //apiCall(url, giphyCb)
     }
 
-
-
-function makeTflRequest(line) {
-    //
-    var url = makeTflUrl(line);
-    apiCall(url, tflCb);
-}
-
-function apiCall(url, cb) {
-    //xmlhttRequest
-    //if readystate = 4, status = 200
-    let data = JSON.parse(response.text);
-    cb(data);
-}
-
-function tflCb(tflData) {
-    resultsObj.lineStatus = tflData.status;///????????
-    makeGiphyRequest();
-}
-
-function makeGiphyRequest() {
-    var url = makeGiphyUrl();
-    apiCall(url, giphyCb);
-}
-
-function giphyCb(giphyData) {
-    resultsObj.giphyUrl = giphyData.url; ///????????
-    dom.render(resultsObj);
-}
-
 }
