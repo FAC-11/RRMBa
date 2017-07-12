@@ -1,6 +1,5 @@
 var test =  require('tape');
 var logic = require('./logic.js');
-var map = require('./map.js');
 
 
 test ('formatLineName test', function(t){
@@ -34,9 +33,11 @@ test ("makeGiphyUrl test", function(t){
   var expected = 'string';
   t.equal(actual,expected,'logic.makeGiphyUrl should return a string');
 
+  logic.resultsObj.status = "Special Service";
   var actual = logic.makeGiphyUrl(logic.resultsObj.status);
-  var expected = "https://api.giphy.com/v1/gifs/search?api_key=03d284987c9444e8931acbc0601067d3&q=aardvark&limit=25&offset=0&rating=G&lang=en";
+  var expected = "https://api.giphy.com/v1/gifs/search?api_key=03d284987c9444e8931acbc0601067d3&limit=25&offset=0&rating=G&lang=en&q=aardvark";
   t.equal(actual,expected,'logic.makeGiphyUrl should return the url');
+  logic.resultsObj = {};
 
   t.end();
 });
