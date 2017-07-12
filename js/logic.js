@@ -1,3 +1,5 @@
+var map = require("./map.js");
+
 var logicObj = {
 
   resultsObj: {},

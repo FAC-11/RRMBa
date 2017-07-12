@@ -21,3 +21,7 @@ var severityGifMap = {
   "Information": "turtle",
   "Service Closed": "zebra"
 };
+
+if (typeof module !== 'undefined'){
+  module.exports=severityGifMap;
+}

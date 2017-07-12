@@ -1,5 +1,6 @@
 var test =  require('tape');
 var logic = require('./logic.js');
+var map = require('./map.js');
 
 
 test ('formatLineName test', function(t){
