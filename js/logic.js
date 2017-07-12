@@ -54,3 +54,7 @@ var logicObj = {
   }
 
 }
+
+if (typeof module !== 'undefined'){
+  module.exports=romanizer;
+}
