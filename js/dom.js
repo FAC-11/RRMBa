@@ -6,7 +6,7 @@
 
     submit.addEventListener( 'submit', function( el ) {
       el.preventDefault();
-      logic.makeTflRequest( tubeLines.value );
+      logicObject.makeTflRequest( tubeLines.value );
     });
 
     return render;
