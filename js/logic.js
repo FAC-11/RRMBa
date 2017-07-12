@@ -37,12 +37,19 @@ var logicObj = {
 
   tflCb: function(tflData) {
     /// sets object status property
+    var lineStatus = tflData[0].lineStatuses[0].statusSeverityDescription;
+    this.resultsObj.status = lineStatus;
     /// calls makeGiphyRequest
+    this.makeGiphyRequest();
   },
 
   giphyCb: function(giphyData) {
     /// set object giphy url property
+    var randomNum = Math.floor(Math.random()*30);
+    var gifSrc = giphyData.data[randomNum].images.fixed_height.url;
+    this.resultsObj.url = gifSrc;
     /// call dom render
+    render(this.resultsObj);
   },
 
   makeTflRequest: function(line) {

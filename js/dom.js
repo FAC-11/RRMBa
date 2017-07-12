@@ -1,7 +1,7 @@
 ( function() {
     var submit = document.getElementById('submit'),
         tubeLines = document.getElementsByName('tube-lines')[0],
-        render = function() {
+        render = function(resultsObject) {
     };
 
     submit.addEventListener( 'submit', function( el ) {
