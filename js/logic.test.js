@@ -1,6 +1,6 @@
-var test =  require ('tape');
-var logic = require ('./logic.js')
-
+var test =  require('tape');
+var logic = require('./logic.js');
+console.log('logic', logic);
 test ('Return strings', function(t){
   var actual = typeof logic.makeTflUrl("Victoria Line");
   var expected = 'string';
