@@ -16,6 +16,6 @@ var submit = document.getElementsByTagName('form')[0],
 
       submit.addEventListener( 'submit', function( e ) {
         e.preventDefault();
-        logicObj.makeTflRequest( tubeLines.value );
+        logicObj.init( tubeLines.value );
       });
 }() );
