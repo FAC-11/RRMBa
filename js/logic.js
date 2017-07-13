@@ -56,7 +56,7 @@ var logicObj = {
           })
 
       }
-      else { 
+      else {
           render(logicObj.resultsObj);
       }
   },

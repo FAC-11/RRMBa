@@ -1,91 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta charset="utf-8">
-  <title>Hades</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-</head>
-
-<body>
-  <header></header>
-  <main>
-    <div class="header">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hades</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+  </head>
+  <body>
+    <main>
       <h1>Hades</h1>
-    </div>
-    <!-- <h2>hell is rush hour</h2> -->
-    <!-- <button type="submit" name="tube-lines" value="submit" id="submit">Submit</button> -->
-    <section class="line-vybes">
-      <h2 class="selected-line"></h2>
+            <section class="line-vybes">
+              <h2 class="selected-line"></h2>
 
       <figure class="output">
         <img src="" class="giphy">
         <figcaption class="status-severity"></figcaption>
       </figure>
 
-      <nav>
-        <form class="choose-your-line">
-          <label class="overground">
-                <input type="radio" name="tube-lines" class="overground" value="london-overground">London Overground</input>
+              <nav>
+              <form class="choose-your-line">
+                <label class="overground">
+                <input type="radio" name="tube-lines" class="overground" value="london-overground"><span class="line-text">London Overground</span></input>
               </label>
-          <label class="circle">
-                  <input type="radio" name="tube-lines" class="circle" value="circle">Circle Line</input>
+                  <label class="circle">
+                  <input type="radio" name="tube-lines" class="circle" value="circle"><span class="line-text">Circle Line</span></input>
                   </label>
-          <label class="hammersmith">
-                  <input type="radio" name="tube-lines" class="hammersmith" value="hammersmith-city">Hammersmith & City Line</input>
+                  <label class="hammersmith">
+                  <input type="radio" name="tube-lines" class="hammersmith" value="hammersmith-city"><span class="line-text">Hammersmith & City Line</span></input>
                 </label>
-          <label class="metropolitan">
-                  <input type="radio" name="tube-lines" class="metropolitan" value="metropolitan">Metropolitan Line</input>
+                  <label class="metropolitan">
+                  <input type="radio" name="tube-lines" class="metropolitan" value="metropolitan"><span class="line-text">Metropolitan Line</span></input>
                 </label>
-          <label class="bakerloo">
-                  <input type="radio" name="tube-lines" class="bakerloo" value="bakerloo">Bakerloo Line</input>
+                  <label class="bakerloo">
+                  <input type="radio" name="tube-lines" class="bakerloo" value="bakerloo"><span class="line-text">Bakerloo Line</span></input>
                 </label>
-          <label class="central">
-                  <input type="radio" name="tube-lines" class="central" value="central">Central Line</input>
+                  <label class="central">
+                  <input type="radio" name="tube-lines" class="central" value="central"><span class="line-text">Central Line</span></input>
                 </label>
-          <label class="district">
-                  <input type="radio" name="tube-lines" class="district" value="district">District Line</input>
+                  <label class="district">
+                  <input type="radio" name="tube-lines" class="district" value="district"><span class="line-text">District Line</span></input>
                 </label>
-          <label class="jubilee">
-                  <input type="radio" name="tube-lines" class="jubilee" value="jubilee">Jubilee Line</input>
+                  <label class="jubilee">
+                  <input type="radio" name="tube-lines" class="jubilee" value="jubilee"><span class="line-text">Jubilee Line</span></input>
                 </label>
-          <label class="northern">
-                  <input type="radio" name="tube-lines" class="northern" value="northern">Northern Line</input>
+                  <label class="northern">
+                  <input type="radio" name="tube-lines" class="northern" value="northern"><span class="line-text">Northern Line</span></input>
                 </label>
-          <label class="piccadilly">
-                  <input type="radio" name="tube-lines" class="piccadilly" value="piccadilly">Piccadilly Line</input>
+                  <label class="piccadilly">
+                  <input type="radio" name="tube-lines" class="piccadilly" value="piccadilly"><span class="line-text">Piccadilly Line</span></input>
                 </label>
-          <label class="victoria">
-                  <input type="radio" name="tube-lines" class="victoria" value="victoria">Victoria Line</input>
+                  <label class="victoria">
+                  <input type="radio" name="tube-lines" class="victoria" value="victoria"><span class="line-text">Victoria Line</span></input>
                 </label>
-          <label class="waterloo">
-                  <input type="radio" name="tube-lines" class="waterloo" value="waterloo-city">Waterloo & City Line</input>
+                  <label class="waterloo">
+                  <input type="radio" name="tube-lines" class="waterloo" value="waterloo-city"><span class="line-text">Waterloo & City Line</span></input>
                 </label>
-          <label class="tfl">
-                  <input type="radio" name="tube-lines" class="tfl" value="tfl-rail">TFL Rail</input>
+                  <label class="tfl">
+                  <input type="radio" name="tube-lines" class="tfl" value="tfl-rail"><span class="line-text">TFL Rail</span></input>
                 </label>
-          <label class="dlr">
-                  <input type="radio" name="tube-lines" class="dlr" value="dlr">DLR</input>
+                  <label class="dlr">
+                  <input type="radio" name="tube-lines" class="dlr" value="dlr"><span class="line-text">DLR</span></input>
                 </label>
-          <label class="tram">
-                  <input type="radio" name="tube-lines" class="tram" value="tram">Tram</input>
+                  <label class="tram">
+                  <input type="radio" name="tube-lines" class="tram" value="tram"><span class="line-text">Tram</span></input>
                 </label>
-        </form>
-      </nav>
-  </main>
-
-
-
-
-
-  <footer></footer>
-
-  <script src="./js/map.js"></script>
-  <script src="./js/logic.js"></script>
-  <script src="./js/dom.js"></script>
-
-</body>
+              </form>
+            </nav>
+      </main>
+    <script src="./js/lines.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="./js/dom.js"></script>
 
 </html>
