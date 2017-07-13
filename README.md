@@ -1,6 +1,6 @@
 # RRMBa
 
-## **WHY (our purpose)**
+## **WHY**
 
 
 How many times you would have wished you knew the status of the tube line you were going to take? Maybe if you had known you would have felt that annoyed, frustrated or content you would have changed your route!
@@ -51,11 +51,28 @@ There was a initial discussion about creating another file inside logic called A
 
 ### Logic
 --------
+Once the pseudocode was ready to be implemented, each pair started writing tests for a couple of functions. Once the test failed (you all know how TDD works ;) ), we started writing the code for our pure and not to so pure (ex. apicall) functions.
+
+As a consequence of our not pure functions, once we got the data from the server, the tests do not longer pass.
+
+A great function that helped our code being clearer and work better was the waterfall function.
+
 ### DOM
 --------
+Almost all the magic happened in our logic file. However, we needed two main things to make it work:
+- Our event listener which will get the data that the user has selected.
+- And our render function which will get the data obtained by the functions in our logic file. 
+
 
 ### CSS
 --------
+
+We did not go crazy with the css, some cool details could be:
+
+- Tube lines' style so they matched the underground colors: For this, we created radio buttons in our form in order to style them properly later on in our stylesheet.
+
+
+Ahh..and we used the London Tube font! =)
 
 ## **Learning**
 
