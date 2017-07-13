@@ -57,14 +57,14 @@ var logicObj = {
   waterfall: function(tasksArray, urlsArray) {
       if (tasksArray.length > 0) {
 
-          var task = tasksArray.slice(0,1);
+          var task = tasksArray[0];
           var remainingTasks = tasksArray.slice(1);
-          var url = urlsArray.slice(0,1)();
+          var url = urlsArray[0];
           var remainingUrls = urlsArray.slice(1);
 
           logicObj.apiCall(url, function(data) {
               task(data);
-              waterfall(remainingTasks, remainingUrls);
+              logicObj.waterfall(remainingTasks, remainingUrls);
           })
 
       }
@@ -73,7 +73,7 @@ var logicObj = {
 
   init: function(line) {
       logicObj.line = line;
-      waterfall([tflCb, giphyCb], [makeTflUrl, makeGiphyUrl]);
+      logicObj.waterfall([logicObj.tflCb, logicObj.giphyCb], [logicObj.makeTflUrl, logicObj.makeGiphyUrl]);
   }
 
 //   makeTflRequest: function(line) {
