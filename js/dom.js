@@ -6,6 +6,7 @@ var render = function( resultsObj ) {
   lineTitleSelector.textContent = resultsObj.line;
   imageSelector.src = resultsObj.url;
   imageSelector.setAttribute('alt', resultsObj.status);
+  imageSelector.setAttribute('title', resultsObj.status);
   captionSelector.textContent = resultsObj.status;
   };
 
