@@ -1,4 +1,6 @@
-var map = require("./map.js");
+if (typeof module !== 'undefined'){
+  var map = require("./map.js");
+}
 
 var logicObj = {
 
