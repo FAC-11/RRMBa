@@ -38,6 +38,16 @@ In our website, when clicking on the tube line that you will be using, the infor
 
 ### File Structure
 --------
+We decided to divide our code in 4 folders:
+
+* HTML
+* CSS
+* Logic - where our pure functions (logic.js), tests (logic.test.js) and Dom.js will be  written.
+* Dom
+* Ressources
+* ReadMe
+
+There was a initial discussion about creating another file inside logic called API.js where our not-pure functions will be written. That would allow us to have 100 % test coverage and have all the pure functions together. However, to make the code more readable, we decided not to take this approach.
 
 ### Logic
 --------
