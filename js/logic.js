@@ -76,7 +76,7 @@ var logicObj = {
   },
 
   init: function(line) {
-      logicObj.line = line;
+      logicObj.resultsObj.line = line;
       logicObj.waterfall([logicObj.tflCb, logicObj.giphyCb], [logicObj.makeTflUrl, logicObj.makeGiphyUrl]);
   }
 
