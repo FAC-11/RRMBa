@@ -14,7 +14,7 @@ var logicObj = {
     /// code!
     var urlStart = 'https://api.tfl.gov.uk/Line/';
     var urlEnd = '/Status?app_id=de9e1a2e&app_key=41bcfcc2d033bae16403b619c8ec1613';
-    return urlStart + logicObj.formatLineName(logicObj.line) + urlEnd;
+    return urlStart + logicObj.formatLineName(logicObj.resultsObj.line) + urlEnd;
   },
 
   makeGiphyUrl: function() {
