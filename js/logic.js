@@ -14,7 +14,7 @@ var logicObj = {
   },
 
   makeGiphyUrl: function() {
-    var urlBase = "https://api.giphy.com/v1/gifs/search?api_key=03d284987c9444e8931acbc0601067d3&limit=25&offset=0&rating=G&lang=en&q=";
+    var urlBase = "https://api.giphy.com/v1/gifs/search?api_key=03d284987c9444e8931acbc0601067d3&limit=30&offset=0&rating=G&lang=en&q=";
     var searchTerm = severityGifMap[logicObj.resultsObj.status];
     return urlBase + searchTerm;
   },
