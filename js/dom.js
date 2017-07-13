@@ -10,11 +10,11 @@ var render = function( resultsObject ) {
   };
 
 ( function() {
-  var submit = document.getElementById('submit'),
-      tubeLines = document.getElementsByName('tube-lines')[0];
+var submit = document.getElementById('submit'),
+    tubeLines = document.getElementsByName('tube-lines')[0];
 
-      submit.addEventListener( 'submit', function( el ) {
-        el.preventDefault();
+      submit.addEventListener( 'click', function( e ) {
+        e.preventDefault();
         logicObject.makeTflRequest( tubeLines.value );
       });
 }() );
