@@ -1,0 +1,160 @@
+body {
+  font-family: "London Tube", sans-serif;
+  background-color: black;
+  color: black;
+  display: flex;
+}
+
+main {
+  width: 80%;
+  display: block;
+  position: absolute;
+  margin: auto;
+  padding-left: 0.3%;
+  padding-right: 1%;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: calc(10vw + 4em);
+  margin: 0;
+  color: white;
+  font-family: "Oleo Script";
+}
+
+/*h2 {
+  text-align: center;
+  margin: 2% 0;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: navy;
+  color: white;
+  font-size: 2em;
+}*/
+
+nav {
+  display: block;
+  width: 100%;
+    /*background-color: grey;*/
+}
+
+label {
+  display: inline-block;
+  padding: 1vw;
+  text-align: center;
+  margin-bottom: 0.5vh;
+  opacity: 0.8;
+}
+
+label:hover, label:active {
+  opacity: 1;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.bakerloo {
+  background-color: #b36305;
+  color: white;
+}
+
+.overground {
+  background-color: #ee7c0e;
+  color: white;
+}
+
+.circle {
+  background-color: #ffd300;
+  color: black;
+}
+
+.hammersmith {
+  background-color: #f3a9bb;
+  color: black;
+}
+
+.metropolitan {
+  background-color: #9b0056;
+  color: white;
+}
+
+.jubilee {
+  background-color: #a0a5a9;
+  color: black;
+}
+
+.central {
+  background-color: #e32017;
+  color: white;
+}
+
+.district {
+  background-color: #00782a;
+  color: white;
+}
+
+.northern {
+  background-color: #000000;
+  color: white;
+}
+
+.piccadilly {
+  background-color: #003688;
+  color: white;
+}
+
+.victoria {
+  background-color: #0098d4;
+  color: white;
+}
+
+.waterloo {
+  background-color: #95cdba;
+  color: black;
+}
+
+.tfl {
+  background-color: #0019a8;
+  color: white;
+}
+
+.tram {
+  background-color: #84b817;
+  color: white;
+}
+.dlr {
+  background-color: #00a4a7;
+  color: white;
+}
+
+#submit {
+  font-size: 3vw;
+  text-align: center;
+  /*position: absolute;*/
+  display: block;
+  margin: 1% auto;
+  border-radius: 15px;
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 1vw;
+  /*display: none;*/
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.output {
+  display: block;
+  left: 20%;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+  background-color: black;
+}

@@ -11,11 +11,15 @@ var render = function( resultsObj ) {
   };
 
 ( function() {
-var submit = document.getElementsByTagName('form')[0],
-    tubeLines = document.getElementsByName('tube-lines')[0];
+var submit = document.getElementsByTagName('button')[0],
+    tubeLines = document.getElementsByName('tube-lines'),
+    form = document.getElementsByClassName('choose-your-line')[0];
 
-      submit.addEventListener( 'submit', function( e ) {
-        e.preventDefault();
-        logicObj.init( tubeLines.value );
+    form.addEventListener( 'click', function( e ) {
+    tubeLines.forEach( function( line ) {
+      if ( line.checked ) {
+        logicObj.init( line.value );
+      };
+    });
       });
 }() );

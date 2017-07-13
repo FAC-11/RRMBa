@@ -5,42 +5,78 @@
     <meta charset="utf-8">
     <title>Hades</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
   </head>
   <body>
     <header></header>
     <main>
-      <h2>Move happily!</h2>
-      <p>select your tube's line</p>
+      <div class="header">
+      <h1>Hades</h1>
+    </div>
+      <!-- <h2>hell is rush hour</h2> -->
+      <!-- <button type="submit" name="tube-lines" value="submit" id="submit">Submit</button> -->
+            <section class="line-vybes">
+              <h2 class="selected-line"></h2>
 
-      <form class="choose-your-line">
-        <select name="tube-lines">
-          <option value="Circle Line">Circle Line</option>
-          <option value="Hammersmith & City Line">Hammersmith & City Line</option>
-          <option value="Metropolitan Line">Metropolitan Line</option>
-          <option value="Bakerloo Line">Bakerloo Line</option>
-          <option value="Central Line">Central Line</option>
-          <option value="District Line">District Line</option>
-          <option value="Jubilee Line">Jubilee Line</option>
-          <option value="Northern Line">Northern Line</option>
-          <option value="Piccadilly Line">Piccadilly Line</option>
-          <option value="Victoria Line">Victoria Line</option>
-          <option value="Waterloo & City Line">Waterloo & City Line</option>
-          <option value="London Overground Line">London Overground Line</option>
-          <option value="TFL Rail Line">TFL Rail Line</option>
-          <option value="DLR Line">DLR Line</option>
-          <option value="Tram Line">Tram Line</option>
-        </select>
-        <button type="submit" name="submit" value="submit" id="submit">Submit</button>
-      </form>
+              <figure class="output">
+                <img src="" class="giphy">
+                <figcaption class="status-severity"></figcaption>
+              </figure>
 
-      <section class="line-vybes">
-        <h2 class="selected-line"></h2>
-        <figure>
-          <img src="" class="giphy">
-          <figcaption class="status-severity"></figcaption>
-        </figure>
-      </section>
-    </main>
+              <nav>
+              <form class="choose-your-line">
+                <label class="overground">
+                <input type="radio" name="tube-lines" class="overground" value="London Overground Line">London Overground</input>
+              </label>
+                  <label class="circle">
+                  <input type="radio" name="tube-lines" class="circle" value="Circle Line">Circle Line</input>
+                  </label>
+                  <label class="hammersmith">
+                  <input type="radio" name="tube-lines" class="hammersmith" value="Hammersmith & City Line">Hammersmith & City Line</input>
+                </label>
+                  <label class="metropolitan">
+                  <input type="radio" name="tube-lines" class="metropolitan" value="Metropolitan Line">Metropolitan Line</input>
+                </label>
+                  <label class="bakerloo">
+                  <input type="radio" name="tube-lines" class="bakerloo" value="Bakerloo Line">Bakerloo Line</input>
+                </label>
+                  <label class="central">
+                  <input type="radio" name="tube-lines" class="central" value="Central Line">Central Line</input>
+                </label>
+                  <label class="district">
+                  <input type="radio" name="tube-lines" class="district" value="District Line">District Line</input>
+                </label>
+                  <label class="jubilee">
+                  <input type="radio" name="tube-lines" class="jubilee" value="Jubilee Line">Jubilee Line</input>
+                </label>
+                  <label class="northern">
+                  <input type="radio" name="tube-lines" class="northern" value="Northern Line">Northern Line</input>
+                </label>
+                  <label class="piccadilly">
+                  <input type="radio" name="tube-lines" class="piccadilly" value="Piccadilly Line">Piccadilly Line</input>
+                </label>
+                  <label class="victoria">
+                  <input type="radio" name="tube-lines" class="victoria" value="Victoria Line">Victoria Line</input>
+                </label>
+                  <label class="waterloo">
+                  <input type="radio" name="tube-lines" class="waterloo" value="Waterloo & City Line">Waterloo & City Line</input>
+                </label>
+                  <label class="tfl">
+                  <input type="radio" name="tube-lines" class="tfl" value="TFL Rail Line">TFL Rail</input>
+                </label>
+                  <label class="dlr">
+                  <input type="radio" name="tube-lines" class="dlr" value="DLR Line">DLR</input>
+                </label>
+                  <label class="tram">
+                  <input type="radio" name="tube-lines" class="tram" value="Tram Line">Tram</input>
+                </label>
+              </form>
+            </nav>
+      </main>
+
+
+
+
 
     <footer></footer>
 
