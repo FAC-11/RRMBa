@@ -59,7 +59,9 @@ var logicObj = {
           })
 
       }
-      render(logicObj.resultsObj);
+      else { 
+          render(logicObj.resultsObj);
+      }
   },
 
   init: function(line) {
