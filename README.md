@@ -55,7 +55,7 @@ Once the pseudocode was ready to be implemented, each pair started writing tests
 
 As a consequence of our not pure functions, once we got the data from the server, the tests do not longer pass.
 
-A great function that helped our code being clearer and work better was the waterfall function.
+A great function that helped our code being clearer and work better was the waterfall function, which passes an array of functions, as first argument, and an array of urls, which will run in series, each passing their results to the next in the array.
 
 ### DOM
 --------
@@ -75,4 +75,10 @@ We did not go crazy with the css, some cool details could be:
 Ahh..and we used the London Tube font! =)
 
 ## **Learning**
+
+[Styling Radio buttons](http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/)
+
+[Waterfall functions](https://www.npmjs.com/package/async-waterfall)
+
+[XML HttpRequest](https://www.w3schools.com/xml/xml_http.asp)
 
