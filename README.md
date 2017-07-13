@@ -43,7 +43,6 @@ We decided to divide our code in 4 folders:
 * HTML
 * CSS
 * Logic - where our pure functions (logic.js), tests (logic.test.js) and Dom.js will be  written.
-* Dom
 * Ressources
 * ReadMe
 
