@@ -30,6 +30,7 @@ var logicObj = {
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
         var data = JSON.parse(xhr.responseText);
+        console.log('api call', data);
         cb(data);
       }
     };
@@ -39,6 +40,7 @@ var logicObj = {
 
   tflCb: function(tflData) {
     /// sets object status property
+    console.log('tflCb', tflData);
     var lineStatus = tflData[0].lineStatuses[0].statusSeverityDescription;
     logicObj.resultsObj.status = lineStatus;
     /// calls makeGiphyRequest
@@ -47,6 +49,7 @@ var logicObj = {
 
   giphyCb: function(giphyData) {
     /// set object giphy url property
+    console.log('giphyCb', giphyData);
     var randomNum = Math.floor(Math.random()*30);
     var gifSrc = giphyData.data[randomNum].images.fixed_height.url;
     logicObj.resultsObj.url = gifSrc;
@@ -63,6 +66,7 @@ var logicObj = {
           var remainingUrls = urlsArray.slice(1);
 
           logicObj.apiCall(url, function(data) {
+              console.log('waterfall anon cb', data);
               task(data);
               logicObj.waterfall(remainingTasks, remainingUrls);
           })
