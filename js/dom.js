@@ -18,8 +18,8 @@ var submit = document.getElementsByTagName('button')[0],
     form.addEventListener( 'click', function( e ) {
     tubeLines.forEach( function( line ) {
       if ( line.checked ) {
-        logicObj.makeTflRequest( line.value );
-      }
+        logicObj.init( line.value );
+      };
     });
       });
 }() );
