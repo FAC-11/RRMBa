@@ -1,19 +1,16 @@
 if (typeof module !== 'undefined'){
   var severityGifMap = require("./map.js");
+  var linesObj = require('./lines.js');
 }
 
 var logicObj = {
 
   resultsObj: {},
 
-  formatLineName: function(line){
-    return line.slice(0,1).toLowerCase() + line.slice(1,-5);
-  },
-
   makeTflUrl: function() {
     var urlStart = 'https://api.tfl.gov.uk/Line/';
     var urlEnd = '/Status?app_id=de9e1a2e&app_key=41bcfcc2d033bae16403b619c8ec1613';
-    return urlStart + logicObj.formatLineName(logicObj.resultsObj.line) + urlEnd;
+    return urlStart + logicObj.resultsObj.line + urlEnd;
   },
 
   makeGiphyUrl: function() {
