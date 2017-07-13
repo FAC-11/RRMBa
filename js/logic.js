@@ -53,15 +53,19 @@ var logicObj = {
   },
 
   makeTflRequest: function(line) {
-    // sets resultsObject.line = line
+    this.resultsObj.line = line;
     //calls makeTflUrl
+    var url = makeTflUrl(line);
     // calls apiCall with url and tflCb
+    apiCall(url, tflCb);
   },
 
   makeGiphyRequest: function() {
-    //get line status from resultsObj
+    //get line status from resultsObj - don't need to, as makeGiphyUrl doesn't take it as an argument and instead calls it from within the function
     //calls makegiphyUrl
+    var url = makeGiphyUrl();
     //apiCall(url, giphyCb)
+    apiCall(url, giphyCb)
   }
 
 }
