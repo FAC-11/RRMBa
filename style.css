@@ -41,7 +41,6 @@ body {
 }
 
 main {
-  width: 100%;
   max-width: 600px;
   display: inline-block;
   margin: 0 auto;
@@ -79,7 +78,7 @@ label {
   height: 20%;
   text-align: center;
   opacity: 0.8;
-  padding: 5px;
+  padding: 1%;
   margin: 0;
   position: relative;
   overflow: hidden;
