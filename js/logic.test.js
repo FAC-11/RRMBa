@@ -288,14 +288,14 @@ test('TFL Callback function', function(t){
 
 
 //Request function tests
-test ('makeTflRequest tests', function(t){
-  logic.makeTflRequest('Victoria Line');
-  var actual = logic.resultsObj.line;
-  var expected = 'Victoria Line';
-  t.deepEqual(actual,expected,'the line property of the results object should equal the inputted line');
-
-  t.end();
-});
+// test ('makeTflRequest tests', function(t){
+//   logic.makeTflRequest('Victoria Line');
+//   var actual = logic.resultsObj.line;
+//   var expected = 'Victoria Line';
+//   t.deepEqual(actual,expected,'the line property of the results object should equal the inputted line');
+//
+//   t.end();
+// });
 
 // Is this possible to test as a pure function as we don't pass the object into it?
 // test ('makeGiphyRequest tests', function(t){
