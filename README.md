@@ -3,7 +3,7 @@
 ## **WHY**
 
 
-How many times you would have wished you knew the status of the tube line you were going to take? Maybe if you had known you would have felt that annoyed, frustrated or content you would have changed your route!
+How many times you would have wished you knew the status of the tube line you were going to take? Maybe if you had known you were going to feel that frustrated  you would have changed your route!
 
 We felt it was useful to display the information about the status of the tubes lines as well as illustrating how you would feel after taking them.
 
