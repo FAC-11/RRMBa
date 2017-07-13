@@ -17,20 +17,20 @@ In our website, when clicking on the tube line that you will be using, the infor
 ## **HOW**
 
 
-###Software Architecture
+Software Architecture
 --------
 
 
-###File Structure
+File Structure
 --------
 
-###Logic
+Logic
 --------
-###DOM
+DOM
 --------
 
-###CSS
+CSS
 --------
 
 ## **Learning**
----------
+
