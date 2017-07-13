@@ -11,8 +11,7 @@ var render = function( resultsObj ) {
   };
 
 ( function() {
-var submit = document.getElementsByTagName('button')[0],
-    tubeLines = document.getElementsByName('tube-lines'),
+var tubeLines = document.getElementsByName('tube-lines'),
     form = document.getElementsByClassName('choose-your-line')[0];
 
     form.addEventListener( 'click', function( e ) {
