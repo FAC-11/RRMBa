@@ -55,7 +55,7 @@ Once the pseudocode was ready to be implemented, each pair started writing tests
 
 As a consequence of our not pure functions, once we got the data from the server, the tests do not longer pass.
 
-A great function that helped our code being clearer and work better was the waterfall function, which passes an array of functions, as first argument, and an array of urls, which will run in series, each passing their results to the next in the array.
+A great function that helped our code being clearer and work better was the waterfall function, which passes an array of functions as first argument, and an array of urls as a second one which will run in series.
 
 ### DOM
 --------
