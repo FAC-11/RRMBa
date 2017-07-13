@@ -1,5 +1,5 @@
 if (typeof module !== 'undefined'){
-  var map = require("./map.js");
+  var severityGifMap = require("./map.js");
 }
 
 var logicObj = {
@@ -14,13 +14,13 @@ var logicObj = {
     /// code!
     var urlStart = 'https://api.tfl.gov.uk/Line/';
     var urlEnd = '/Status?app_id=de9e1a2e&app_key=41bcfcc2d033bae16403b619c8ec1613';
-    return urlStart + this.formatLineName(line) + urlEnd;
+    return urlStart + logicObj.formatLineName(line) + urlEnd;
   },
 
   makeGiphyUrl: function() {
     /// code!
     var urlBase = "https://api.giphy.com/v1/gifs/search?api_key=03d284987c9444e8931acbc0601067d3&limit=25&offset=0&rating=G&lang=en&q=";
-    var searchTerm = map[this.resultsObj.status];
+    var searchTerm = severityGifMap[logicObj.resultsObj.status];
     return urlBase + searchTerm;
   },
 
@@ -40,34 +40,34 @@ var logicObj = {
   tflCb: function(tflData) {
     /// sets object status property
     var lineStatus = tflData[0].lineStatuses[0].statusSeverityDescription;
-    this.resultsObj.status = lineStatus;
+    logicObj.resultsObj.status = lineStatus;
     /// calls makeGiphyRequest
-    this.makeGiphyRequest();
+    logicObj.makeGiphyRequest();
   },
 
   giphyCb: function(giphyData) {
     /// set object giphy url property
     var randomNum = Math.floor(Math.random()*30);
     var gifSrc = giphyData.data[randomNum].images.fixed_height.url;
-    this.resultsObj.url = gifSrc;
+    logicObj.resultsObj.url = gifSrc;
     /// call dom render
-    render(this.resultsObj);
+    render(logicObj.resultsObj);
   },
 
   makeTflRequest: function(line) {
-    this.resultsObj.line = line;
+    logicObj.resultsObj.line = line;
     //calls makeTflUrl
-    var url = makeTflUrl(line);
+    var url = logicObj.makeTflUrl(line);
     // calls apiCall with url and tflCb
-    apiCall(url, tflCb);
+    logicObj.apiCall(url, logicObj.tflCb);
   },
 
   makeGiphyRequest: function() {
     //get line status from resultsObj - don't need to, as makeGiphyUrl doesn't take it as an argument and instead calls it from within the function
     //calls makegiphyUrl
-    var url = makeGiphyUrl();
+    var url = logicObj.makeGiphyUrl();
     //apiCall(url, giphyCb)
-    apiCall(url, giphyCb)
+    logicObj.apiCall(url, logicObj.giphyCb)
   }
 
 }
