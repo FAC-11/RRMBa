@@ -34,7 +34,7 @@ body {
 
 @font-face {
     font-family: "London Tube";
-    src: url("./resources/London-Tube.ttf");
+    src: url(./resources/London-Tube.ttf);
 }
 
 body {
