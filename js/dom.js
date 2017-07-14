@@ -15,8 +15,10 @@ var tubeLines = document.getElementsByName('tube-lines'),
     form = document.getElementsByClassName('choose-your-line')[0];
 
     form.addEventListener( 'click', function( e ) {
+      console.log(e);
     tubeLines.forEach( function( line ) {
       if ( line.checked ) {
+        console.log('about to run init');
         logicObj.init( line.value );
       };
     });
