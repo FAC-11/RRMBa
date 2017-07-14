@@ -42,7 +42,7 @@ var logicObj = {
     logicObj.resultsObj.url = gifSrc;
   },
 
-  waterfall: function(tasksArray, urlsArray, render) {
+  waterfall: function(tasksArray, urlsArray) {
       if (tasksArray.length > 0) {
 
           var task = tasksArray[0];
@@ -52,7 +52,7 @@ var logicObj = {
 
           logicObj.apiCall(url, function(data) {
               task(data);
-              logicObj.waterfall(remainingTasks, remainingUrls, render);
+              logicObj.waterfall(remainingTasks, remainingUrls);
           })
 
       }
@@ -61,10 +61,10 @@ var logicObj = {
       }
   },
 
-  init: function(line, lineName, render) {
+  init: function(line, lineName) {
       logicObj.resultsObj.line = line;
       logicObj.resultsObj.lineName = lineName;
-      logicObj.waterfall([logicObj.tflCb, logicObj.giphyCb], [logicObj.makeTflUrl, logicObj.makeGiphyUrl], render);
+      logicObj.waterfall([logicObj.tflCb, logicObj.giphyCb], [logicObj.makeTflUrl, logicObj.makeGiphyUrl]);
   }
 
 }
