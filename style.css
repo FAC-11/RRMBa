@@ -32,6 +32,11 @@ body {
 	line-height: 1;
 }
 
+@font-face {
+    font-family: "London Tube";
+    src: url("./resources/London-Tube.ttf");
+}
+
 body {
   font-family: "London Tube", sans-serif;
   background-color: black;
