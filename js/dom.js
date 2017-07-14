@@ -7,7 +7,7 @@ var render = function( resultsObj ) {
   imageSelector.setAttribute('alt', resultsObj.status);
   imageSelector.setAttribute('title', resultsObj.status);
   captionSelector.textContent = resultsObj.status;
-    lineTitleSelector.textContent = resultsObj.line;
+    lineTitleSelector.textContent = resultsObj.lineName;
 
   };
 
@@ -16,6 +16,6 @@ var tubeLines = document.getElementsByName('tube-lines'),
     chooseLine = document.getElementsByClassName('choose-your-line')[0];
 
     chooseLine.addEventListener( 'click', function( e ) {
-        logicObj.init( e.target.value );
+        logicObj.init( e.target.value, e.target.textContent);
       });
 }() );
