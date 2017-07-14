@@ -61,8 +61,9 @@ var logicObj = {
       }
   },
 
-  init: function(line) {
+  init: function(line, lineName) {
       logicObj.resultsObj.line = line;
+      logicObj.resultsObj.lineName = lineName;
       logicObj.waterfall([logicObj.tflCb, logicObj.giphyCb], [logicObj.makeTflUrl, logicObj.makeGiphyUrl]);
   }
 
