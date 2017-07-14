@@ -43,7 +43,7 @@ We decided to divide our code in 4 folders:
 * HTML
 * CSS
 * Logic - where our pure functions (logic.js), tests (logic.test.js) and Dom.js will be  written.
-* Ressources
+* Resources
 * ReadMe
 
 There was a initial discussion about creating another file inside logic called API.js where our not-pure functions will be written. That would allow us to have 100 % test coverage and have all the pure functions together. However, to make the code more readable, we decided not to take this approach.
@@ -60,7 +60,7 @@ A great function that helped our code being clearer and work better was the wate
 --------
 Almost all the magic happened in our logic file. However, we needed two main things to make it work:
 - Our event listener which will get the data that the user has selected.
-- And our render function which will get the data obtained by the functions in our logic file. 
+- And our render function which will get the data obtained by the functions in our logic file.
 
 
 ### CSS
@@ -73,6 +73,14 @@ We did not go crazy with the css, some cool details could be:
 
 Ahh..and we used the London Tube font! =)
 
+## **Do you want to run this project in your own computer?**
+
+In your terminal, you should run the following commands:
+
+* _git clone https://github.com/FAC-11/RRMBa.git _    
+* _npm i_  
+* if you want to run the tests, run _npm test_ or _tape_ ....
+
 ## **Learning**
 
 [Styling Radio buttons](http://code.stephenmorley.org/html-and-css/styling-checkboxes-and-radio-buttons/)
@@ -80,4 +88,3 @@ Ahh..and we used the London Tube font! =)
 [Waterfall functions](https://www.npmjs.com/package/async-waterfall)
 
 [XML HttpRequest](https://www.w3schools.com/xml/xml_http.asp)
-
