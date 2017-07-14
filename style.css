@@ -36,8 +36,6 @@ body {
   font-family: "London Tube", sans-serif;
   background-color: black;
   color: black;
-  /*display: flex;*/
-
 }
 
 main {
@@ -65,13 +63,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-nav {
-  display: block;
-  width: 100%;
-  margin: 0;
-}
-
-label, button {
+button {
   display: inline-block;
   font-size: 1rem;
   width: 30%;
@@ -81,23 +73,16 @@ label, button {
   padding: 1%;
   margin: 0;
   position: relative;
+  border: none;
   overflow: hidden;
 }
 
-button {
-  border: none;
-}
-
-span {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-form {
-  width: 95%;
+.choose-your-line {
+  width: 100%;
   margin: auto;
+}
+
+.choose-your-line > div {
 }
 
 label:hover, label:active {
@@ -163,12 +148,12 @@ input[type="radio"] {
   color: white;
 }
 
-.waterloo {
+.waterloo-city {
   background-color: #95cdba;
   color: black;
 }
 
-.tfl {
+.tfl-rail {
   background-color: #0019a8;
   color: white;
 }
