@@ -32,6 +32,11 @@ body {
 	line-height: 1;
 }
 
+@font-face {
+    font-family: "London Tube";
+    src: url("./resources/London-Tube.ttf");
+}
+
 body {
   font-family: "London Tube", sans-serif;
   background-color: black;
@@ -67,14 +72,14 @@ button {
   display: inline-block;
   font-size: 1rem;
   width: 30%;
-  height: 50px;
+  height: 60px;
   text-align: center;
+	white-space: nowrap;
   opacity: 0.8;
   padding: 1%;
-  margin: 0;
-  position: relative;
+  margin: 0.1rem 0;
   border: none;
-  overflow: hidden;
+  text-overflow: hidden;
 }
 
 .choose-your-line {
