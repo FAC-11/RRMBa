@@ -7,7 +7,10 @@ var render = function( resultsObj ) {
   imageSelector.setAttribute('alt', resultsObj.status);
   imageSelector.setAttribute('title', resultsObj.status);
   captionSelector.textContent = resultsObj.status;
-    lineTitleSelector.textContent = resultsObj.lineName;
+  lineTitleSelector.style.padding = '1%';
+  lineTitleSelector.style.backgroundColor = linesColours[resultsObj.line][0];
+  lineTitleSelector.style.color = linesColours[resultsObj.line][1];
+  lineTitleSelector.textContent = resultsObj.lineName;
 
   };
 
